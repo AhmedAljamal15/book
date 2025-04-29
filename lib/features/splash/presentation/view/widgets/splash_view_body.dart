@@ -1,7 +1,6 @@
 import 'package:book/core/utils/assets.dart';
-import 'package:book/features/home/presentation/views/home_view.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:go_router/go_router.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -22,8 +21,6 @@ class _SplashViewBodyState extends State<SplashViewBody>
 
     navigateHomeView();
   }
-
-  
 
   @override
   void dispose() {
@@ -54,19 +51,11 @@ class _SplashViewBodyState extends State<SplashViewBody>
 
   void navigateHomeView() {
     Future.delayed(Duration(seconds: 3), () {
-      Get.to(
-        HomeView(),
-        transition: Transition.zoom,
-        duration: Duration(seconds: 2),
-      );
-    },);
+      if (mounted) {
+        GoRouter.of(context).push("/homeView");
+      }
+    });
   }
-
-
-
-
-
-
   void initSplashAnimation() {
     animationController = AnimationController(
       vsync: this,
