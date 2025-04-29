@@ -1,7 +1,5 @@
-
 import 'package:book/constants.dart';
 import 'package:flutter/material.dart';
-
 
 abstract class Styles {
   static const textStyle18 = TextStyle(
@@ -29,9 +27,6 @@ abstract class Styles {
   );
 }
 
-
-
-
 // class AppColors {
 //   static const Color kPrimaryColor = Color(0xFF4C68FF);
 //   static const Color kScaffoldColor = Color(0xffF7F7F7);
@@ -40,5 +35,4 @@ abstract class Styles {
 //   static const Color kBlackColor = Color(0xFF17162B);
 //   static const Color kGreyColor = Colors.grey;
 
-  
 // }

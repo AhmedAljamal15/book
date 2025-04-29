@@ -7,8 +7,6 @@ void main(List<String> args) {
   runApp(const Book());
 }
 
-
-
 class Book extends StatelessWidget {
   const Book({super.key});
 
@@ -20,13 +18,7 @@ class Book extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: kPrimaryColor,
         textTheme: GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme),
-        ),
-      
-      
+      ),
     );
   }
-
-
-
-  
 }

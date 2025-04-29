@@ -48,7 +48,6 @@ class _SplashViewBodyState extends State<SplashViewBody>
     );
   }
 
-
   void navigateHomeView() {
     Future.delayed(Duration(seconds: 3), () {
       if (mounted) {
@@ -56,6 +55,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
       }
     });
   }
+
   void initSplashAnimation() {
     animationController = AnimationController(
       vsync: this,

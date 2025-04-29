@@ -2,8 +2,8 @@ import 'package:book/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomPrice extends StatelessWidget {
-  const CustomPrice({super.key, });
-  
+  const CustomPrice({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -11,7 +11,7 @@ class CustomPrice extends StatelessWidget {
       child: Row(
         children: [
           Expanded(
-            child:Container(
+            child: Container(
               height: 50,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.only(
@@ -21,16 +21,14 @@ class CustomPrice extends StatelessWidget {
                 color: Colors.white,
               ),
               child: Text(
-               r"19.99 $",
-               textAlign: TextAlign.center,
-                style: Styles.textStyle30.copyWith(
-                  color: Colors.black,
-                ),
+                r"19.99 $",
+                textAlign: TextAlign.center,
+                style: Styles.textStyle30.copyWith(color: Colors.black),
               ),
-            ), 
+            ),
           ),
           Expanded(
-            child:Container(
+            child: Container(
               height: 50,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.only(
@@ -42,14 +40,11 @@ class CustomPrice extends StatelessWidget {
               child: Center(
                 child: Text(
                   "Free Preview",
-                  style: Styles.textStyle18.copyWith(
-                    color: Colors.black,
-                  ),
+                  style: Styles.textStyle18.copyWith(color: Colors.black),
                 ),
               ),
-            ), 
+            ),
           ),
-      
         ],
       ),
     );

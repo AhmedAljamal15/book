@@ -13,7 +13,7 @@ class BestSellerListViewItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        GoRouter.of(context).push("/bookView",);
+        GoRouter.of(context).push("/bookView");
       },
       child: ListView.builder(
         padding: EdgeInsets.zero,
@@ -27,6 +27,3 @@ class BestSellerListViewItem extends StatelessWidget {
     );
   }
 }
-
-
-

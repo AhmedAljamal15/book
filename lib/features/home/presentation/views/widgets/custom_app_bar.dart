@@ -13,9 +13,12 @@ class CustomAppBar extends StatelessWidget {
         children: [
           Image.asset(AssetsData.logo, height: 25),
           const Spacer(),
-          GestureDetector(onTap: () {
-            GoRouter.of(context).push("/searchView");
-          }, child: Icon(Icons.search)),
+          GestureDetector(
+            onTap: () {
+              GoRouter.of(context).push("/searchView");
+            },
+            child: Icon(Icons.search),
+          ),
         ],
       ),
     );
